@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý Nhân Viên</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .form-container {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: inline-block;
+            width: 150px;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"] {
+            padding: 5px;
+            margin-bottom: 10px;
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .button-container {
+            margin-top: 10px;
+        }
+
+        button {
+            padding: 8px 12px;
+            margin-right: 5px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .search-container {
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+
+        td {
+            text-align: center;
+        }
+
+        table button {
+            background-color: #f44336;
+            border: none;
+            padding: 5px 10px;
+            color: white;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        table button:hover {
+            background-color: #e53935;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Quản lý Nhân Viên</h1>
+
+    <div class="form-container">
+        <label for="employeeName">Tên nhân viên:</label>
+        <input type="text" id="employeeName"><br>
+
+        <label for="employeeClass">Chức vụ:</label>
+        <input type="text" id="employeeClass"><br>
+
+        <div class="button-container">
+            <button>Thêm nhân viên</button>
+        </div>
+    </div>
+
+    <div class="search-container">
+        <button for="search">Tìm kiếm nhân viên</button>
+        <input type="text" id="search"">
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Tên nhân viên</th>
+                <th>Chức vụ</th>
+                <th>Hành động</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Nguyễn Văn A</td>
+                <td>Nhân viên văn phòng</td>
+                <td>
+                    <button>Sửa</button>
+                    <button>Xóa</button>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Trần Thị B</td>
+                <td>Nhân viên kế toán</td>
+                <td>
+                    <button>Sửa</button>
+                    <button>Xóa</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
